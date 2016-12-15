@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Catatan Penting</string>
+    <string name="email">Email</string>
+    <string name="login">LOGIN</string>
+    <string name="password">Password</string>
+    <string name="register">REGISTER</string>
+    <string name="title_activity_drawer">Drawer</string>
+
+    <string name="lblTagihan">Tagihan</string>
+    <string name="lblCard">Card Holder</string>
+    <string name="lbllogout">logOut</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="lblwelcomeFragment">Selamat Datang</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Cardfragment">card Fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Settingfragment">Settings fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>
