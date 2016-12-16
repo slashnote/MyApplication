@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "948278401281",
+    "firebase_url": "https://myapplication-c06e6.firebaseio.com",
+    "project_id": "myapplication-c06e6",
+    "storage_bucket": "myapplication-c06e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948278401281:android:37b4abf4185032ac",
+        "android_client_info": {
+          "package_name": "com.example.wahyu.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948278401281-rg23oui6hdtdmgkl60kl862kmam2dofm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdsakVKL7yB9lh14h_52kVfUl2P00c_9Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948278401281-rg23oui6hdtdmgkl60kl862kmam2dofm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

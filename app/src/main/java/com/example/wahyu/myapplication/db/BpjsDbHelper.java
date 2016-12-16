@@ -27,7 +27,7 @@ public class BpjsDbHelper extends SQLiteOpenHelper {
 
     private static final String TAG = "BpjsDbHelper";
 
-    private static final int VERSION = 1;
+    private static final int VERSION = 2;
     private static final String NAMA_DB = "bpjs.db";
 
     private SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
@@ -154,6 +154,13 @@ public class BpjsDbHelper extends SQLiteOpenHelper {
         return null;
     }
 
+    public void kosongkanTabelTagihan(){
+        SQLiteDatabase db = getWritableDatabase();
+        db.execSQL("delete from tagihan");
+        db.execSQL("delete from peserta");
+        db.close();
+    }
+
     public void insertPeserta(Card p){
         ContentValues data = new ContentValues();
         data.put(BpjsDbHelper.PesertaDb.KOLOM_ID, p.getId());
@@ -175,6 +182,8 @@ public class BpjsDbHelper extends SQLiteOpenHelper {
         tagihan.put(BpjsDbHelper.TagihanDb.KOLOM_TANGGAL_TAGIHAN, formatter.format(t.getTanggalTagihan()));
         tagihan.put(BpjsDbHelper.TagihanDb.KOLOM_TANGGAL_JATUH_TEMPO, formatter.format(t.getTanggalJatuhTempo()));
         tagihan.put(BpjsDbHelper.TagihanDb.KOLOM_NILAI, t.getNilai().toString());
+
+        insertPeserta(t.getPeserta());
 
         SQLiteDatabase db = getWritableDatabase();
         db.insert(TagihanDb.NAMA_TABEL, null, tagihan);
